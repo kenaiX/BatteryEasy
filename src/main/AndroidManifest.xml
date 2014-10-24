@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kenai.battery_easy"
+    android:installLocation="internalOnly" >
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".Battery"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ServiceforBattery"
+            android:label="@string/app_name"
+            android:persistent="true" >
+            <intent-filter>
+                <action android:name="com.kenai.battery.ServiceforBattery" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".AutoStart" >
+            <intent-filter android:priority="90000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kenai.battery_easy.battery.Broadcast_Airplane" >
+            <intent-filter android:priority="90000" >
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

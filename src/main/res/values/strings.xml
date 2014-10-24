@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">魅电量</string>
+    <string name="error_feixingmoshi">飞行模式切换信息不完整  -kenai</string>
+</resources>

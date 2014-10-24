@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dizhi_battery">mstore:http://app.meizu.com/phone/apps/7ddf8636871844849a9062a0adc137ce</string>
+    <string name="dizhi_melody">mstore:http://app.meizu.com/phone/apps/a1156e07ad7e4f1bba05014c88b3b98c</string>
+    <string name="APKPublicKey">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbUhRfkd8BHKTDnPWIONrdQTnYlM8kY+Oq+OrU/gvHaa21m24BcO+7wEuIL3oQeR2Y3KH0PekjJbhmOkoDKHzt+SF+Nsuy9SkEuEluPbwbONDBccLkPUfCwcF5mTuzfPC7xbjxpH0KJGkR1NQPjxMFLUUYAgiN+1VB9mfjdOPhawIDAQAB</string>
+
+</resources>

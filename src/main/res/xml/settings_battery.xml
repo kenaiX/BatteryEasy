@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen
+        android:key="zhichi"
+        android:title="支持kenai" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="update"
+        android:title="升级版本" >
+    </PreferenceScreen>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="is_wendu"
+        android:summaryOff="顶栏显示电量"
+        android:summaryOn="顶栏显示温度"
+        android:title="显示温度" />
+    <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isbattery_feixing"
+            android:summaryOff="自动记录飞行模式期间耗电情况（关闭）"
+            android:title="飞行损耗" />
+
+    <PreferenceCategory android:title="其它" >
+        <PreferenceScreen android:title="kenai软件" android:key="tuiguang"/>
+        <PreferenceScreen
+            android:key="call"
+            android:title="联系作者" />
+        <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="autostart"
+        android:title="开机自启" />
+        <PreferenceScreen
+            android:key="Esc"
+            android:title="完全退出" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
